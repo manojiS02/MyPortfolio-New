@@ -51,3 +51,30 @@ document.querySelector("#start-btn").addEventListener('click', function () {
 
 
 
+
+
+const startBtn = document.getElementById('start-btn');
+const stopBtn = document.getElementById('stop-btn');
+const knightRiderDivs = document.querySelectorAll('.knight-rider');
+
+let isPlaying = false;
+
+startBtn.addEventListener('click', () => {
+  if (!isPlaying) {
+    knightRiderDivs.forEach(div => div.classList.add('active')); // Start animation
+    isPlaying = true;
+    // You can also play the audio here if desired:
+    const audio = document.getElementById('audio');
+    audio.play();
+  }
+});
+
+stopBtn.addEventListener('click', () => {
+  if (isPlaying) {
+    knightRiderDivs.forEach(div => div.classList.remove('active')); // Stop animation
+    isPlaying = false;
+    // You can also pause the audio here if desired:
+    const audio = document.getElementById('audio');
+    audio.pause();
+  }
+});

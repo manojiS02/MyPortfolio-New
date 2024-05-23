@@ -31,3 +31,40 @@ button {
     top: 15rem;
     left: 37rem;
 }
+
+.knight-rider.active {
+  animation-play-state: running;
+}
+.knight-rider {
+  animation-play-state: paused;
+}
+
+
+/*=========================================================*/
+
+/*section {*/
+/*  display: flex;*/
+/*}*/
+
+/*.knight-rider {*/
+/*  width: 20px;*/
+/*  height: 20px;*/
+/*  margin: 5px;*/
+/*  background-color: red;*/
+/*  animation: knightRider 1s infinite;*/
+/*  opacity: 0;*/
+/*}*/
+
+/*@keyframes knightRider {*/
+/*  0% { opacity: 0; }*/
+/*  50% { opacity: 1; }*/
+/*  100% { opacity: 0; }*/
+/*}*/
+
+/*.knight-rider.active {*/
+/*  animation-play-state: running;*/
+/*}*/
+
+/*.knight-rider {*/
+/*  animation-play-state: paused;*/
+/*}*/
